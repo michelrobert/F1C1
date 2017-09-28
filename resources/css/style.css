@@ -226,15 +226,19 @@ header .mobile {
 
 .feature {
   flex: 1;
-  padding: 2rem;
+  padding: 2rem 2rem 0 2rem;
   margin: 0px 1.25rem;
   background-color: white;
+  width: 40%;
 }
 
 .feature .image-container {
-  width: 90%;
-  height: 65%;
   margin: 0 auto;
+}
+
+.image-container img {
+    display: block;
+    width: 100%;
 }
 
 .feature h2 {
@@ -242,6 +246,7 @@ header .mobile {
   font-size: 2.25rem;
   font-weight: bold;
   color: #4a4a4a;
+  margin-top: 40px;
 }
 
 .feature h3 {
@@ -249,6 +254,10 @@ header .mobile {
   line-height: 1.2;
   font-weight: 300;
   color: #4a4a4a;
+}
+
+div.content {
+  margin: 80px;
 }
 
 @media only screen and (max-width: 890px) {
@@ -278,14 +287,21 @@ header .mobile {
 
 /* Filters Section */
 
+
+
 #filters-section {
-  padding: 4rem 0;
+  padding: 0 0 4rem 0;
   background-color: #4a4a4a;
+  display: flex;
+  flex-wrap: wrap;
+
 }
 
 #filters-section .content {
   padding: 0 .625rem;
-  margin-bottom: 5rem;
+  width: 100%;
+  margin: auto;
+  margin: 64px 0 80px 0;
 }
 
 #filters-section .content h2 {
@@ -304,6 +320,7 @@ header .mobile {
 #filters-section .images-container {
   max-width: 100%;
   padding: 0 1%;
+  display: flex;
 }
 
 @media only screen and (max-width: 760px) {
@@ -338,8 +355,22 @@ header .mobile {
 
 /* Quotes Section */
 
+.quote {
+  margin: 80px 30px;
+  font-family: Palatino;
+  font-style: italic;
+  color: #4a4a4a;
+  font-size: 30px;
+  line-height: 1.1;
+}
+
+
+
 #quotes-section {
   background-color: #f3f3f3;
+  display: flex;
+  justify-content: center;
+
 }
 
 #quotes-section content {
@@ -387,6 +418,7 @@ footer .content {
   color: white;
   display: flex;
   font-size: .75rem;
+  margin: 0px;
 }
 
 footer .copyright {
